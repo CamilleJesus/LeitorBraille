@@ -1,0 +1,118 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+# Date created = 22:44:40  February 28, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Memoria_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY ACEX1K
+set_global_assignment -name DEVICE "EP1K100QC208-3"
+set_global_assignment -name TOP_LEVEL_ENTITY pbl2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:44:40  FEBRUARY 28, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name MISC_FILE "D:/Backup/Dropbox/UEFS/CD/PBL2/Memoria.dpf"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name CHECK_OUTPUTS OFF
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD LVTTL/LVCMOS
+set_location_assignment PIN_58 -to B5
+set_location_assignment PIN_56 -to B4
+set_location_assignment PIN_54 -to B3
+set_location_assignment PIN_65 -to B2
+set_location_assignment PIN_63 -to B1
+set_location_assignment PIN_61 -to B0
+set_location_assignment PIN_79 -to clock
+set_global_assignment -name MISC_FILE "E:/PBL2/Memoria.dpf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE leds.vwf
+set_location_assignment PIN_99 -to escolher
+set_global_assignment -name BDF_FILE LED2.bdf
+set_global_assignment -name BDF_FILE LED3.bdf
+set_global_assignment -name BDF_FILE LED4.bdf
+set_global_assignment -name BDF_FILE LED5.bdf
+set_global_assignment -name BDF_FILE LED6.bdf
+set_global_assignment -name BDF_FILE DivisorFrequencia.bdf
+set_global_assignment -name BDF_FILE ProjetoLed6.bdf
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name BDF_FILE Block3.bdf
+set_global_assignment -name BDF_FILE Block4.bdf
+set_global_assignment -name BDF_FILE Block5.bdf
+set_global_assignment -name BDF_FILE Block6.bdf
+set_global_assignment -name BDF_FILE Block7.bdf
+set_global_assignment -name BDF_FILE Block8.bdf
+set_global_assignment -name BDF_FILE Block9.bdf
+set_global_assignment -name BDF_FILE Block10.bdf
+set_global_assignment -name BDF_FILE Block11.bdf
+set_global_assignment -name BDF_FILE Block12.bdf
+set_global_assignment -name BDF_FILE Block13.bdf
+set_global_assignment -name BDF_FILE Block14.bdf
+set_global_assignment -name BDF_FILE Block15.bdf
+set_global_assignment -name QIP_FILE altclklock0.qip
+set_global_assignment -name QIP_FILE lpm_rom0.qip
+set_global_assignment -name QIP_FILE lpm_rom1.qip
+set_global_assignment -name QIP_FILE lpm_rom2.qip
+set_global_assignment -name BDF_FILE comparador8Bits.bdf
+set_global_assignment -name BDF_FILE contador.bdf
+set_global_assignment -name BDF_FILE juntar.bdf
+set_global_assignment -name SOURCE_FILE lpm_rom2.cmp
+set_global_assignment -name VHDL_FILE lpm_rom2.vhd
+set_global_assignment -name BDF_FILE pbl2.bdf
+set_global_assignment -name BDF_FILE separador.bdf
+set_global_assignment -name BDF_FILE SomadorFA.bdf
+set_global_assignment -name BDF_FILE Somar.bdf
+set_global_assignment -name BDF_FILE tipoMaiuscula.bdf
+set_global_assignment -name BDF_FILE tipoNumero.bdf
+set_global_assignment -name BDF_FILE ValorSoma.bdf
+set_global_assignment -name BDF_FILE LED1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../Memoria.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE leds.vwf
+set_global_assignment -name BDF_FILE led12.bdf
+set_global_assignment -name BDF_FILE posicao6.bdf
+set_global_assignment -name BDF_FILE posicao3.bdf
+set_global_assignment -name BDF_FILE posicao4.bdf
+set_global_assignment -name BDF_FILE posicao5.bdf
+set_global_assignment -name BDF_FILE posicao2.bdf
+set_global_assignment -name BDF_FILE Decodificador.bdf
+set_global_assignment -name BDF_FILE posicao1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Memoria.vwf
+set_global_assignment -name BDF_FILE divisor.bdf
+set_global_assignment -name BDF_FILE comparador1bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name BDF_FILE comparador7bits.bdf
+set_global_assignment -name BDF_FILE divisor2.bdf
+set_global_assignment -name BDF_FILE DivisorFrequencia0.bdf

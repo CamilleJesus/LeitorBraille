@@ -1,0 +1,474 @@
+Simulator report for Memoria
+Fri Mar 25 00:08:50 2016
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|content
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 252 nodes    ;
+; Simulation Coverage         ;      79.68 % ;
+; Total Number of Transitions ; 39916        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; ACEX1K       ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; leds.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------+
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|content ;
++-------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      79.68 % ;
+; Total nodes checked                                 ; 252          ;
+; Total output ports checked                          ; 251          ;
+; Total output ports with complete 1/0-value coverage ; 200          ;
+; Total output ports with no 1/0-value coverage       ; 51           ;
+; Total output ports with no 1-value coverage         ; 51           ;
+; Total output ports with no 0-value coverage         ; 51           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                          ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                               ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |pbl2|B0                                                                                ; |pbl2|B0                                                                                ; pin_out          ;
+; |pbl2|inst1                                                                             ; |pbl2|inst1                                                                             ; out              ;
+; |pbl2|clock                                                                             ; |pbl2|clock                                                                             ; out              ;
+; |pbl2|inst6                                                                             ; |pbl2|inst6                                                                             ; out0             ;
+; |pbl2|inst8                                                                             ; |pbl2|inst8                                                                             ; out0             ;
+; |pbl2|B5                                                                                ; |pbl2|B5                                                                                ; pin_out          ;
+; |pbl2|B1                                                                                ; |pbl2|B1                                                                                ; pin_out          ;
+; |pbl2|B4                                                                                ; |pbl2|B4                                                                                ; pin_out          ;
+; |pbl2|B2                                                                                ; |pbl2|B2                                                                                ; pin_out          ;
+; |pbl2|B3                                                                                ; |pbl2|B3                                                                                ; pin_out          ;
+; |pbl2|letra[6]                                                                          ; |pbl2|letra[6]                                                                          ; pin_out          ;
+; |pbl2|letra[5]                                                                          ; |pbl2|letra[5]                                                                          ; pin_out          ;
+; |pbl2|letra[4]                                                                          ; |pbl2|letra[4]                                                                          ; pin_out          ;
+; |pbl2|letra[3]                                                                          ; |pbl2|letra[3]                                                                          ; pin_out          ;
+; |pbl2|letra[2]                                                                          ; |pbl2|letra[2]                                                                          ; pin_out          ;
+; |pbl2|letra[1]                                                                          ; |pbl2|letra[1]                                                                          ; pin_out          ;
+; |pbl2|letra[0]                                                                          ; |pbl2|letra[0]                                                                          ; pin_out          ;
+; |pbl2|contador:inst9|inst3                                                              ; |pbl2|contador:inst9|inst3                                                              ; regout           ;
+; |pbl2|contador:inst9|inst3~0                                                            ; |pbl2|contador:inst9|inst3~0                                                            ; out0             ;
+; |pbl2|contador:inst9|inst4                                                              ; |pbl2|contador:inst9|inst4                                                              ; regout           ;
+; |pbl2|contador:inst9|inst4~0                                                            ; |pbl2|contador:inst9|inst4~0                                                            ; out0             ;
+; |pbl2|contador:inst9|inst7                                                              ; |pbl2|contador:inst9|inst7                                                              ; out0             ;
+; |pbl2|contador:inst9|inst5                                                              ; |pbl2|contador:inst9|inst5                                                              ; regout           ;
+; |pbl2|contador:inst9|inst5~0                                                            ; |pbl2|contador:inst9|inst5~0                                                            ; out0             ;
+; |pbl2|contador:inst9|inst8                                                              ; |pbl2|contador:inst9|inst8                                                              ; out0             ;
+; |pbl2|contador:inst9|inst6                                                              ; |pbl2|contador:inst9|inst6                                                              ; regout           ;
+; |pbl2|contador:inst9|inst6~0                                                            ; |pbl2|contador:inst9|inst6~0                                                            ; out0             ;
+; |pbl2|contador:inst9|inst10                                                             ; |pbl2|contador:inst9|inst10                                                             ; out0             ;
+; |pbl2|contador:inst9|inst11                                                             ; |pbl2|contador:inst9|inst11                                                             ; regout           ;
+; |pbl2|contador:inst9|inst11~0                                                           ; |pbl2|contador:inst9|inst11~0                                                           ; out0             ;
+; |pbl2|contador:inst9|inst12                                                             ; |pbl2|contador:inst9|inst12                                                             ; out0             ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[6]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[6]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[5]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[5]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[4]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[4]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[3]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[3]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[2]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[2]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[1]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[1]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[0]                                   ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|otri[0]                                   ; out              ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][6]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[6]                          ; dataout          ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][5]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[5]                          ; dataout          ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][4]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[4]                          ; dataout          ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][3]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[3]                          ; dataout          ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][2]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[2]                          ; dataout          ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][1]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[1]                          ; dataout          ;
+; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|segment[0][0]                 ; |pbl2|lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[0]                          ; dataout          ;
+; |pbl2|Somar:inst7|inst47                                                                ; |pbl2|Somar:inst7|inst47                                                                ; out0             ;
+; |pbl2|Somar:inst7|inst45                                                                ; |pbl2|Somar:inst7|inst45                                                                ; out0             ;
+; |pbl2|Somar:inst7|inst3                                                                 ; |pbl2|Somar:inst7|inst3                                                                 ; out0             ;
+; |pbl2|Somar:inst7|inst18                                                                ; |pbl2|Somar:inst7|inst18                                                                ; regout           ;
+; |pbl2|Somar:inst7|inst16                                                                ; |pbl2|Somar:inst7|inst16                                                                ; regout           ;
+; |pbl2|Somar:inst7|inst17                                                                ; |pbl2|Somar:inst7|inst17                                                                ; regout           ;
+; |pbl2|Somar:inst7|inst20                                                                ; |pbl2|Somar:inst7|inst20                                                                ; regout           ;
+; |pbl2|Somar:inst7|inst22                                                                ; |pbl2|Somar:inst7|inst22                                                                ; regout           ;
+; |pbl2|Somar:inst7|inst49                                                                ; |pbl2|Somar:inst7|inst49                                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst12|inst                                                 ; |pbl2|Somar:inst7|SomadorFA:inst12|inst                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst9|inst                                                  ; |pbl2|Somar:inst7|SomadorFA:inst9|inst                                                  ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst                                                 ; |pbl2|Somar:inst7|SomadorFA:inst13|inst                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst3                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst3                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst                                                  ; |pbl2|Somar:inst7|SomadorFA:inst8|inst                                                  ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst3                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst3                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst8                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst8                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst6                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst6                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst10|inst                                                 ; |pbl2|Somar:inst7|SomadorFA:inst10|inst                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst10|inst3                                                ; |pbl2|Somar:inst7|SomadorFA:inst10|inst3                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst10|inst8                                                ; |pbl2|Somar:inst7|SomadorFA:inst10|inst8                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst10|inst6                                                ; |pbl2|Somar:inst7|SomadorFA:inst10|inst6                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst10|inst7                                                ; |pbl2|Somar:inst7|SomadorFA:inst10|inst7                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst10|inst5                                                ; |pbl2|Somar:inst7|SomadorFA:inst10|inst5                                                ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|inst10                                            ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|inst10                                            ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|inst18                      ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|inst18                      ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst|inst9   ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst|inst9   ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|inst16                       ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|inst16                       ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|inst17                       ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|inst17                       ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst14|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst14|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst14|inst9  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst14|inst9  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13|inst9  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13|inst9  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst12|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst12|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst12|inst9  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst12|inst9  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst|inst7    ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst|inst7    ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst|inst9    ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11|inst9  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11|inst9  ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|inst10                                               ; |pbl2|Somar:inst7|tipoNumero:inst5|inst10                                               ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|inst18                         ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|inst18                         ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12|inst8    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12|inst8    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst|inst9      ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst|inst9      ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst|inst8      ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst|inst8      ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst11|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst11|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst11|inst8    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst11|inst8    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|inst16                         ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|inst16                         ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|inst17                         ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|inst17                         ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst14|inst7    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst14|inst7    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst14|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst14|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst15|inst7    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst15|inst7    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst15|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst15|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst13|inst7    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst13|inst7    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst13|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst13|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst|inst9      ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst|inst9      ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst11|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst11|inst9    ; out0             ;
+; |pbl2|Somar:inst7|ValorSoma:inst1|inst22                                                ; |pbl2|Somar:inst7|ValorSoma:inst1|inst22                                                ; out0             ;
+; |pbl2|Somar:inst7|ValorSoma:inst1|inst15                                                ; |pbl2|Somar:inst7|ValorSoma:inst1|inst15                                                ; out0             ;
+; |pbl2|Somar:inst7|ValorSoma:inst1|inst13                                                ; |pbl2|Somar:inst7|ValorSoma:inst1|inst13                                                ; out0             ;
+; |pbl2|Somar:inst7|ValorSoma:inst1|inst14                                                ; |pbl2|Somar:inst7|ValorSoma:inst1|inst14                                                ; out0             ;
+; |pbl2|Somar:inst7|ValorSoma:inst1|inst23                                                ; |pbl2|Somar:inst7|ValorSoma:inst1|inst23                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst11|inst                                                 ; |pbl2|Somar:inst7|SomadorFA:inst11|inst                                                 ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block14:inst27|inst                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block14:inst27|inst                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block13:inst26|inst3                            ; |pbl2|Decodificador:inst4|posicao1:inst|Block13:inst26|inst3                            ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block13:inst26|inst                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block13:inst26|inst                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block13:inst26|inst1                            ; |pbl2|Decodificador:inst4|posicao1:inst|Block13:inst26|inst1                            ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block12:inst25|inst1                            ; |pbl2|Decodificador:inst4|posicao1:inst|Block12:inst25|inst1                            ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block12:inst25|inst                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block12:inst25|inst                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block11:inst24|inst1                            ; |pbl2|Decodificador:inst4|posicao1:inst|Block11:inst24|inst1                            ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block11:inst24|inst                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block11:inst24|inst                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block10:inst23|inst3                            ; |pbl2|Decodificador:inst4|posicao1:inst|Block10:inst23|inst3                            ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block10:inst23|inst                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block10:inst23|inst                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block8:inst21|inst5                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block8:inst21|inst5                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block8:inst21|inst2                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block8:inst21|inst2                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block8:inst21|inst4                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block8:inst21|inst4                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block9:inst22|inst6                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block9:inst22|inst6                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block9:inst22|inst4                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block9:inst22|inst4                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block9:inst22|inst5                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block9:inst22|inst5                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block7:inst20|inst2                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block7:inst20|inst2                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block7:inst20|inst                              ; |pbl2|Decodificador:inst4|posicao1:inst|Block7:inst20|inst                              ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block7:inst20|inst1                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block7:inst20|inst1                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block6:inst18|inst                              ; |pbl2|Decodificador:inst4|posicao1:inst|Block6:inst18|inst                              ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block4:inst16|inst4                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block4:inst16|inst4                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block2:inst|inst                                ; |pbl2|Decodificador:inst4|posicao1:inst|Block2:inst|inst                                ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block1:inst14|inst                              ; |pbl2|Decodificador:inst4|posicao1:inst|Block1:inst14|inst                              ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block15:inst1|inst1                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block15:inst1|inst1                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block15:inst1|inst                              ; |pbl2|Decodificador:inst4|posicao1:inst|Block15:inst1|inst                              ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst30                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst30                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst7                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst7                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst5                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst5                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst3                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst3                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst2                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst2                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst1                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst1                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst                                           ; |pbl2|Decodificador:inst4|posicao2:inst5|inst                                           ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst12                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst12                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst9                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst9                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst8                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst8                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst6                                          ; |pbl2|Decodificador:inst4|posicao2:inst5|inst6                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst25                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst25                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst24                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst24                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst22                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst22                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst32                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst32                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst31                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst31                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst29                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst29                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst28                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst28                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst27                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst27                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst26                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst26                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|inst                                           ; |pbl2|Decodificador:inst4|posicao3:inst4|inst                                           ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|BC~D~F                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|BC~D~F                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|BC~D~E                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|BC~D~E                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~ABC~D                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|~ABC~D                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|BC~D~G                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|BC~D~G                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|BC~E~F                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|BC~E~F                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~AB~E~FG                                       ; |pbl2|Decodificador:inst4|posicao3:inst4|~AB~E~FG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~AB~CF~G                                       ; |pbl2|Decodificador:inst4|posicao3:inst4|~AB~CF~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|ABC~E~G                                        ; |pbl2|Decodificador:inst4|posicao3:inst4|ABC~E~G                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|AB~CDE                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|AB~CDE                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|inst                                           ; |pbl2|Decodificador:inst4|posicao6:inst3|inst                                           ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|A~BG                                           ; |pbl2|Decodificador:inst4|posicao6:inst3|A~BG                                           ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|A~B~D                                          ; |pbl2|Decodificador:inst4|posicao6:inst3|A~B~D                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|A~B~C                                          ; |pbl2|Decodificador:inst4|posicao6:inst3|A~B~C                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~ABC~D                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|~ABC~D                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~AB~DE~G                                       ; |pbl2|Decodificador:inst4|posicao6:inst3|~AB~DE~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~AB~DF~G                                       ; |pbl2|Decodificador:inst4|posicao6:inst3|~AB~DF~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~AB~DEF                                        ; |pbl2|Decodificador:inst4|posicao6:inst3|~AB~DEF                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|BC~DEF                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|BC~DEF                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|inst24                                         ; |pbl2|Decodificador:inst4|posicao5:inst7|inst24                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|~ABC~D                                         ; |pbl2|Decodificador:inst4|posicao5:inst7|~ABC~D                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|AB~CD~E~G                                      ; |pbl2|Decodificador:inst4|posicao5:inst7|AB~CD~E~G                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|AB~C~DEG                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|AB~C~DEG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|ABCE~F~G                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|ABCE~F~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|inst                                           ; |pbl2|Decodificador:inst4|posicao5:inst7|inst                                           ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|AB~CDEF                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|AB~CDEF                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|BD~EF~G                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|BD~EF~G                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|~AB~E~FG                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|~AB~E~FG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|~ABC~FG                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|~ABC~FG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|B~DE~F~G                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|B~DE~F~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|BC~EF~G                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|BC~EF~G                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|BC~E~FG                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|BC~E~FG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|~ABC~E~G                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|~ABC~E~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|inst                                           ; |pbl2|Decodificador:inst4|posicao4:inst6|inst                                           ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~FG                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~FG                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|BC~E~F                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|BC~E~F                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|~ABC~D                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|~ABC~D                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~CD                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~CD                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~DE                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~DE                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~DFG                                          ; |pbl2|Decodificador:inst4|posicao4:inst6|A~DFG                                          ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|AC~E~F                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|AC~E~F                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|inst16                                         ; |pbl2|Decodificador:inst4|posicao4:inst6|inst16                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|~AB~DEF~G                                      ; |pbl2|Decodificador:inst4|posicao4:inst6|~AB~DEF~G                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|BD~E~FG                                        ; |pbl2|Decodificador:inst4|posicao4:inst6|BD~E~FG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~EF~G                                       ; |pbl2|Decodificador:inst4|posicao4:inst6|A~B~EF~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~CD~FG                                        ; |pbl2|Decodificador:inst4|posicao4:inst6|A~CD~FG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~C~DE~G                                       ; |pbl2|Decodificador:inst4|posicao4:inst6|A~C~DE~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|ABC~F~G                                        ; |pbl2|Decodificador:inst4|posicao4:inst6|ABC~F~G                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao4:inst6|A~CDF~G                                        ; |pbl2|Decodificador:inst4|posicao4:inst6|A~CDF~G                                        ; out0             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                               ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |pbl2|Somar:inst7|SomadorFA:inst12|inst6                                                ; |pbl2|Somar:inst7|SomadorFA:inst12|inst6                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst9|inst7                                                 ; |pbl2|Somar:inst7|SomadorFA:inst9|inst7                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst8                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst8                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst6                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst6                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst7                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst7                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst5                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst5                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst7                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst7                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst5                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst5                                                 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|inst19                      ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|inst19                      ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst15|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst15|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst13|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst13|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst15|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst15|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst14|inst8    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst14|inst8    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst13|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst13|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12|inst7    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12|inst7    ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block5:inst17|inst4                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block5:inst17|inst4                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block3:inst15|inst1                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block3:inst15|inst1                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block2:inst|inst1                               ; |pbl2|Decodificador:inst4|posicao1:inst|Block2:inst|inst1                               ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block1:inst14|BAND                              ; |pbl2|Decodificador:inst4|posicao1:inst|Block1:inst14|BAND                              ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst14                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst14                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst13                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst13                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst10                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst10                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst17                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst17                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst15                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst15                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst19                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst19                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|inst27                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|inst27                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|B~CD~EFG                                       ; |pbl2|Decodificador:inst4|posicao3:inst4|B~CD~EFG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~EG                                        ; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~EG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~FG                                        ; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~FG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCD~EFG                                      ; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCD~EFG                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCDE~FG                                      ; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCDE~FG                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|inst24                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|inst24                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~ABD~E~F~G                                     ; |pbl2|Decodificador:inst4|posicao6:inst3|~ABD~E~F~G                                     ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|ABCD~F~G                                       ; |pbl2|Decodificador:inst4|posicao6:inst3|ABCD~F~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~ABDEG                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|~ABDEG                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|BC~DEG                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|BC~DEG                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|BCD~E~F                                        ; |pbl2|Decodificador:inst4|posicao6:inst3|BCD~E~F                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|ACD~E~G                                        ; |pbl2|Decodificador:inst4|posicao6:inst3|ACD~E~G                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|BC~DEFG                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|BC~DEFG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|~AB~CDFG                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|~AB~CDFG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCD~EFG                                      ; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCD~EFG                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|A~B~C~D~E~F~G                                  ; |pbl2|Decodificador:inst4|posicao5:inst7|A~B~C~D~E~F~G                                  ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCDE~FG                                      ; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCDE~FG                                      ; out0             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                               ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |pbl2|Somar:inst7|SomadorFA:inst12|inst6                                                ; |pbl2|Somar:inst7|SomadorFA:inst12|inst6                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst9|inst7                                                 ; |pbl2|Somar:inst7|SomadorFA:inst9|inst7                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst8                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst8                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst6                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst6                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst7                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst7                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst13|inst5                                                ; |pbl2|Somar:inst7|SomadorFA:inst13|inst5                                                ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst7                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst7                                                 ; out0             ;
+; |pbl2|Somar:inst7|SomadorFA:inst8|inst5                                                 ; |pbl2|Somar:inst7|SomadorFA:inst8|inst5                                                 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|inst19                      ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|inst19                      ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst15|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst15|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst13|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst13|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst8 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12|inst8 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11|inst9 ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11|inst9 ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst15|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst15|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11|inst7  ; |pbl2|Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11|inst7  ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst14|inst8    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst14|inst8    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst13|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst13|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12|inst9    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12|inst9    ; out0             ;
+; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12|inst7    ; |pbl2|Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12|inst7    ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block5:inst17|inst4                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block5:inst17|inst4                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block3:inst15|inst1                             ; |pbl2|Decodificador:inst4|posicao1:inst|Block3:inst15|inst1                             ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block2:inst|inst1                               ; |pbl2|Decodificador:inst4|posicao1:inst|Block2:inst|inst1                               ; out0             ;
+; |pbl2|Decodificador:inst4|posicao1:inst|Block1:inst14|BAND                              ; |pbl2|Decodificador:inst4|posicao1:inst|Block1:inst14|BAND                              ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst14                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst14                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst13                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst13                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst10                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst10                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst17                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst17                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst15                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst15                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao2:inst5|inst19                                         ; |pbl2|Decodificador:inst4|posicao2:inst5|inst19                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|inst27                                         ; |pbl2|Decodificador:inst4|posicao3:inst4|inst27                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|B~CD~EFG                                       ; |pbl2|Decodificador:inst4|posicao3:inst4|B~CD~EFG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~EG                                        ; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~EG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~FG                                        ; |pbl2|Decodificador:inst4|posicao3:inst4|~ABD~FG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCD~EFG                                      ; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCD~EFG                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCDE~FG                                      ; |pbl2|Decodificador:inst4|posicao3:inst4|A~BCDE~FG                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|inst24                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|inst24                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~ABD~E~F~G                                     ; |pbl2|Decodificador:inst4|posicao6:inst3|~ABD~E~F~G                                     ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|ABCD~F~G                                       ; |pbl2|Decodificador:inst4|posicao6:inst3|ABCD~F~G                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|~ABDEG                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|~ABDEG                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|BC~DEG                                         ; |pbl2|Decodificador:inst4|posicao6:inst3|BC~DEG                                         ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|BCD~E~F                                        ; |pbl2|Decodificador:inst4|posicao6:inst3|BCD~E~F                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao6:inst3|ACD~E~G                                        ; |pbl2|Decodificador:inst4|posicao6:inst3|ACD~E~G                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|BC~DEFG                                        ; |pbl2|Decodificador:inst4|posicao5:inst7|BC~DEFG                                        ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|~AB~CDFG                                       ; |pbl2|Decodificador:inst4|posicao5:inst7|~AB~CDFG                                       ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCD~EFG                                      ; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCD~EFG                                      ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|A~B~C~D~E~F~G                                  ; |pbl2|Decodificador:inst4|posicao5:inst7|A~B~C~D~E~F~G                                  ; out0             ;
+; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCDE~FG                                      ; |pbl2|Decodificador:inst4|posicao5:inst7|A~BCDE~FG                                      ; out0             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Mar 25 00:08:50 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Memoria -c Memoria
+Info: Using vector source file "C:/Users/cleyb/Desktop/PBL2/leds.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of leds.vwf called Memoria.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      79.68 %
+Info: Number of transitions in simulation is 39916
+Info: Vector file leds.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Fri Mar 25 00:08:50 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

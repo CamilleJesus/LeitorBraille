@@ -1,0 +1,30 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GED</sub_system>
+	<file>/quartus/edt/ged/ged_insert_symbol_dialog.cpp</file>
+	<line>1564</line>
+	<callstack>
+	0x0b71c495: edt_ged + 0x5c495 (_DllMain@12 + 0x2f765)
+	0x646760ee: mfc90 + 0x2160ee
+	0x00e23fd0: GCL_GTO + 0x3fd0 (?draw@GTO_LINE@@UAIXPAVCDC@@PAVCWnd@@@Z + 0xd0)
+	0x644e4998: mfc90 + 0x84998
+	0x646707ea: mfc90 + 0x2107ea
+	0x0b740637: edt_ged + 0x80637 (_DllMain@12 + 0x53907)
+	0x0b73f1db: edt_ged + 0x7f1db (_DllMain@12 + 0x524ab)
+	0x644b8e80: mfc90 + 0x58e80
+	0x644b86b3: mfc90 + 0x586b3
+	0x644e444f: mfc90 + 0x8444f
+	0x644b62ea: mfc90 + 0x562ea
+	0x644e44d0: mfc90 + 0x844d0
+	0x0b718c86: edt_ged + 0x58c86 (_DllMain@12 + 0x2bf56)
+	0x644bbe98: mfc90 + 0x5be98
+	0x644bba61: mfc90 + 0x5ba61
+	0xffffffffffffffff:
+	</callstack>
+	<error>wizard_name != &quot;&quot;</error>
+	<date>Tue Apr 05 10:17:54 2016</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>wizard_name != &quot;&quot;
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

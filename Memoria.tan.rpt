@@ -1,0 +1,630 @@
+Classic Timing Analyzer report for Memoria
+Thu Mar 31 07:12:03 2016
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clock'
+  7. Clock Hold: 'clock'
+  8. tco
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                ;
++------------------------------+------------------------------------------+---------------+----------------------------------+-------------------------------+--------------------+------------+----------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                      ; From                          ; To                 ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+----------------------------------+-------------------------------+--------------------+------------+----------+--------------+
+; Worst-case tco               ; N/A                                      ; None          ; 158.900 ns                       ; contador:inst2|inst11         ; B4                 ; clock      ; --       ; 0            ;
+; Clock Setup: 'clock'         ; N/A                                      ; None          ; 11.49 MHz ( period = 87.000 ns ) ; contador:inst2|inst11         ; Somar:inst7|inst22 ; clock      ; clock    ; 0            ;
+; Clock Hold: 'clock'          ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; DivisorFrequencia:inst15|FF28 ; inst1              ; clock      ; clock    ; 23           ;
+; Total number of failed paths ;                                          ;               ;                                  ;                               ;                    ;            ;          ; 23           ;
++------------------------------+------------------------------------------+---------------+----------------------------------+-------------------------------+--------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP1K100QC208-3     ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clock           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clock'                                                                                                                                                                                                                 ;
++-------+------------------------------------------------+--------------------------------+--------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                           ; To                             ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+--------------------------------+--------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 11.49 MHz ( period = 87.000 ns )               ; contador:inst2|inst6           ; Somar:inst7|inst16             ; clock      ; clock    ; None                        ; None                      ; 19.700 ns               ;
+; N/A   ; 11.49 MHz ( period = 87.000 ns )               ; contador:inst2|inst11          ; Somar:inst7|inst16             ; clock      ; clock    ; None                        ; None                      ; 19.700 ns               ;
+; N/A   ; 11.49 MHz ( period = 87.000 ns )               ; contador:inst2|inst6           ; Somar:inst7|inst17             ; clock      ; clock    ; None                        ; None                      ; 19.700 ns               ;
+; N/A   ; 11.49 MHz ( period = 87.000 ns )               ; contador:inst2|inst11          ; Somar:inst7|inst17             ; clock      ; clock    ; None                        ; None                      ; 19.700 ns               ;
+; N/A   ; 11.49 MHz ( period = 87.000 ns )               ; contador:inst2|inst6           ; Somar:inst7|inst22             ; clock      ; clock    ; None                        ; None                      ; 19.700 ns               ;
+; N/A   ; 11.49 MHz ( period = 87.000 ns )               ; contador:inst2|inst11          ; Somar:inst7|inst22             ; clock      ; clock    ; None                        ; None                      ; 19.700 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst            ; Somar:inst7|inst16             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst3           ; Somar:inst7|inst16             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst4           ; Somar:inst7|inst16             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst5           ; Somar:inst7|inst16             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst            ; Somar:inst7|inst17             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst3           ; Somar:inst7|inst17             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst4           ; Somar:inst7|inst17             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst5           ; Somar:inst7|inst17             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst            ; Somar:inst7|inst22             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst3           ; Somar:inst7|inst22             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst4           ; Somar:inst7|inst22             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 11.52 MHz ( period = 86.800 ns )               ; contador:inst2|inst5           ; Somar:inst7|inst22             ; clock      ; clock    ; None                        ; None                      ; 19.600 ns               ;
+; N/A   ; 22.12 MHz ( period = 45.200 ns )               ; contador:inst2|inst6           ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 21.400 ns               ;
+; N/A   ; 22.12 MHz ( period = 45.200 ns )               ; contador:inst2|inst11          ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 21.400 ns               ;
+; N/A   ; 22.17 MHz ( period = 45.100 ns )               ; contador:inst2|inst            ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 21.300 ns               ;
+; N/A   ; 22.17 MHz ( period = 45.100 ns )               ; contador:inst2|inst3           ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 21.300 ns               ;
+; N/A   ; 22.17 MHz ( period = 45.100 ns )               ; contador:inst2|inst4           ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 21.300 ns               ;
+; N/A   ; 22.17 MHz ( period = 45.100 ns )               ; contador:inst2|inst5           ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 21.300 ns               ;
+; N/A   ; 31.45 MHz ( period = 31.800 ns )               ; Somar:inst7|inst22             ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 12.600 ns               ;
+; N/A   ; 40.98 MHz ( period = 24.400 ns )               ; Somar:inst7|inst17             ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 8.900 ns                ;
+; N/A   ; 52.63 MHz ( period = 19.000 ns )               ; Somar:inst7|inst16             ; Somar:inst7|inst18             ; clock      ; clock    ; None                        ; None                      ; 6.200 ns                ;
+; N/A   ; 62.11 MHz ( period = 16.100 ns )               ; contador:inst2|inst5           ; contador:inst2|inst11          ; clock      ; clock    ; None                        ; None                      ; 5.700 ns                ;
+; N/A   ; 62.89 MHz ( period = 15.900 ns )               ; contador:inst2|inst4           ; contador:inst2|inst11          ; clock      ; clock    ; None                        ; None                      ; 5.500 ns                ;
+; N/A   ; 63.29 MHz ( period = 15.800 ns )               ; contador:inst2|inst            ; contador:inst2|inst11          ; clock      ; clock    ; None                        ; None                      ; 5.400 ns                ;
+; N/A   ; 64.10 MHz ( period = 15.600 ns )               ; contador:inst2|inst3           ; contador:inst2|inst11          ; clock      ; clock    ; None                        ; None                      ; 5.200 ns                ;
+; N/A   ; 70.42 MHz ( period = 14.200 ns )               ; contador:inst2|inst5           ; contador:inst2|inst6           ; clock      ; clock    ; None                        ; None                      ; 3.800 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns )               ; contador:inst2|inst4           ; contador:inst2|inst6           ; clock      ; clock    ; None                        ; None                      ; 3.600 ns                ;
+; N/A   ; 71.94 MHz ( period = 13.900 ns )               ; contador:inst2|inst            ; contador:inst2|inst6           ; clock      ; clock    ; None                        ; None                      ; 3.500 ns                ;
+; N/A   ; 72.99 MHz ( period = 13.700 ns )               ; contador:inst2|inst3           ; contador:inst2|inst6           ; clock      ; clock    ; None                        ; None                      ; 3.300 ns                ;
+; N/A   ; 76.34 MHz ( period = 13.100 ns )               ; contador:inst2|inst4           ; contador:inst2|inst5           ; clock      ; clock    ; None                        ; None                      ; 2.700 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns )               ; contador:inst2|inst            ; contador:inst2|inst4           ; clock      ; clock    ; None                        ; None                      ; 2.600 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns )               ; contador:inst2|inst            ; contador:inst2|inst5           ; clock      ; clock    ; None                        ; None                      ; 2.600 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns )               ; contador:inst2|inst6           ; contador:inst2|inst11          ; clock      ; clock    ; None                        ; None                      ; 2.600 ns                ;
+; N/A   ; 78.13 MHz ( period = 12.800 ns )               ; contador:inst2|inst3           ; contador:inst2|inst4           ; clock      ; clock    ; None                        ; None                      ; 2.400 ns                ;
+; N/A   ; 78.13 MHz ( period = 12.800 ns )               ; contador:inst2|inst3           ; contador:inst2|inst5           ; clock      ; clock    ; None                        ; None                      ; 2.400 ns                ;
+; N/A   ; 86.21 MHz ( period = 11.600 ns )               ; contador:inst2|inst            ; contador:inst2|inst            ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; 86.21 MHz ( period = 11.600 ns )               ; contador:inst2|inst3           ; contador:inst2|inst3           ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; 86.21 MHz ( period = 11.600 ns )               ; contador:inst2|inst4           ; contador:inst2|inst4           ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; 86.21 MHz ( period = 11.600 ns )               ; contador:inst2|inst5           ; contador:inst2|inst5           ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; 86.21 MHz ( period = 11.600 ns )               ; contador:inst2|inst6           ; contador:inst2|inst6           ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; 86.21 MHz ( period = 11.600 ns )               ; contador:inst2|inst11          ; contador:inst2|inst11          ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; 91.74 MHz ( period = 10.900 ns )               ; contador:inst2|inst            ; contador:inst2|inst3           ; clock      ; clock    ; None                        ; None                      ; 0.500 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF27 ; DivisorFrequencia0:inst16|FF27 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF28  ; DivisorFrequencia:inst15|FF28  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF26 ; DivisorFrequencia0:inst16|FF26 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF27  ; DivisorFrequencia:inst15|FF27  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF25 ; DivisorFrequencia0:inst16|FF25 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF26  ; DivisorFrequencia:inst15|FF26  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF24 ; DivisorFrequencia0:inst16|FF24 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF25  ; DivisorFrequencia:inst15|FF25  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF23 ; DivisorFrequencia0:inst16|FF23 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF24  ; DivisorFrequencia:inst15|FF24  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF22 ; DivisorFrequencia0:inst16|FF22 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF23  ; DivisorFrequencia:inst15|FF23  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF21 ; DivisorFrequencia0:inst16|FF21 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF22  ; DivisorFrequencia:inst15|FF22  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF20 ; DivisorFrequencia0:inst16|FF20 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF21  ; DivisorFrequencia:inst15|FF21  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF19 ; DivisorFrequencia0:inst16|FF19 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF20  ; DivisorFrequencia:inst15|FF20  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF18 ; DivisorFrequencia0:inst16|FF18 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF19  ; DivisorFrequencia:inst15|FF19  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF17 ; DivisorFrequencia0:inst16|FF17 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF18  ; DivisorFrequencia:inst15|FF18  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF16 ; DivisorFrequencia0:inst16|FF16 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF17  ; DivisorFrequencia:inst15|FF17  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF15 ; DivisorFrequencia0:inst16|FF15 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF16  ; DivisorFrequencia:inst15|FF16  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF14 ; DivisorFrequencia0:inst16|FF14 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF15  ; DivisorFrequencia:inst15|FF15  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF13 ; DivisorFrequencia0:inst16|FF13 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF14  ; DivisorFrequencia:inst15|FF14  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF12 ; DivisorFrequencia0:inst16|FF12 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF13  ; DivisorFrequencia:inst15|FF13  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF11 ; DivisorFrequencia0:inst16|FF11 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF12  ; DivisorFrequencia:inst15|FF12  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF10 ; DivisorFrequencia0:inst16|FF10 ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF11  ; DivisorFrequencia:inst15|FF11  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF9  ; DivisorFrequencia0:inst16|FF9  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF10  ; DivisorFrequencia:inst15|FF10  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF8  ; DivisorFrequencia0:inst16|FF8  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF9   ; DivisorFrequencia:inst15|FF9   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF7  ; DivisorFrequencia0:inst16|FF7  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF8   ; DivisorFrequencia:inst15|FF8   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF6  ; DivisorFrequencia0:inst16|FF6  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF7   ; DivisorFrequencia:inst15|FF7   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF5  ; DivisorFrequencia0:inst16|FF5  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF6   ; DivisorFrequencia:inst15|FF6   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF4  ; DivisorFrequencia0:inst16|FF4  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF5   ; DivisorFrequencia:inst15|FF5   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF3  ; DivisorFrequencia0:inst16|FF3  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF4   ; DivisorFrequencia:inst15|FF4   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF2  ; DivisorFrequencia0:inst16|FF2  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF3   ; DivisorFrequencia:inst15|FF3   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia0:inst16|FF1  ; DivisorFrequencia0:inst16|FF1  ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF2   ; DivisorFrequencia:inst15|FF2   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; DivisorFrequencia:inst15|FF1   ; DivisorFrequencia:inst15|FF1   ; clock      ; clock    ; None                        ; None                      ; 1.200 ns                ;
++-------+------------------------------------------------+--------------------------------+--------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'clock'                                                                                                                                                                                            ;
++------------------------------------------+--------------------------------+-----------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From                           ; To                    ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+--------------------------------+-----------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; DivisorFrequencia:inst15|FF28  ; inst1                 ; clock      ; clock    ; None                       ; None                       ; 7.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; DivisorFrequencia0:inst16|FF27 ; inst1                 ; clock      ; clock    ; None                       ; None                       ; 7.800 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst            ; contador:inst2|inst3  ; clock      ; clock    ; None                       ; None                       ; 0.500 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst            ; contador:inst2|inst   ; clock      ; clock    ; None                       ; None                       ; 1.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst3           ; contador:inst2|inst3  ; clock      ; clock    ; None                       ; None                       ; 1.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst4           ; contador:inst2|inst4  ; clock      ; clock    ; None                       ; None                       ; 1.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst5           ; contador:inst2|inst5  ; clock      ; clock    ; None                       ; None                       ; 1.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst6           ; contador:inst2|inst6  ; clock      ; clock    ; None                       ; None                       ; 1.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst11          ; contador:inst2|inst11 ; clock      ; clock    ; None                       ; None                       ; 1.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst3           ; contador:inst2|inst4  ; clock      ; clock    ; None                       ; None                       ; 2.400 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst3           ; contador:inst2|inst5  ; clock      ; clock    ; None                       ; None                       ; 2.400 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst            ; contador:inst2|inst4  ; clock      ; clock    ; None                       ; None                       ; 2.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst            ; contador:inst2|inst5  ; clock      ; clock    ; None                       ; None                       ; 2.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst6           ; contador:inst2|inst11 ; clock      ; clock    ; None                       ; None                       ; 2.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst4           ; contador:inst2|inst5  ; clock      ; clock    ; None                       ; None                       ; 2.700 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst3           ; contador:inst2|inst6  ; clock      ; clock    ; None                       ; None                       ; 3.300 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst            ; contador:inst2|inst6  ; clock      ; clock    ; None                       ; None                       ; 3.500 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst4           ; contador:inst2|inst6  ; clock      ; clock    ; None                       ; None                       ; 3.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst5           ; contador:inst2|inst6  ; clock      ; clock    ; None                       ; None                       ; 3.800 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst3           ; contador:inst2|inst11 ; clock      ; clock    ; None                       ; None                       ; 5.200 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst            ; contador:inst2|inst11 ; clock      ; clock    ; None                       ; None                       ; 5.400 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst4           ; contador:inst2|inst11 ; clock      ; clock    ; None                       ; None                       ; 5.500 ns                 ;
+; Not operational: Clock Skew > Data Delay ; contador:inst2|inst5           ; contador:inst2|inst11 ; clock      ; clock    ; None                       ; None                       ; 5.700 ns                 ;
++------------------------------------------+--------------------------------+-----------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++-----------------------------------------------------------------------------+
+; tco                                                                         ;
++-------+--------------+------------+-----------------------+----+------------+
+; Slack ; Required tco ; Actual tco ; From                  ; To ; From Clock ;
++-------+--------------+------------+-----------------------+----+------------+
+; N/A   ; None         ; 158.900 ns ; contador:inst2|inst6  ; B4 ; clock      ;
+; N/A   ; None         ; 158.900 ns ; contador:inst2|inst11 ; B4 ; clock      ;
+; N/A   ; None         ; 158.800 ns ; contador:inst2|inst   ; B4 ; clock      ;
+; N/A   ; None         ; 158.800 ns ; contador:inst2|inst3  ; B4 ; clock      ;
+; N/A   ; None         ; 158.800 ns ; contador:inst2|inst4  ; B4 ; clock      ;
+; N/A   ; None         ; 158.800 ns ; contador:inst2|inst5  ; B4 ; clock      ;
+; N/A   ; None         ; 156.000 ns ; contador:inst2|inst6  ; B3 ; clock      ;
+; N/A   ; None         ; 156.000 ns ; contador:inst2|inst11 ; B3 ; clock      ;
+; N/A   ; None         ; 155.900 ns ; contador:inst2|inst   ; B3 ; clock      ;
+; N/A   ; None         ; 155.900 ns ; contador:inst2|inst3  ; B3 ; clock      ;
+; N/A   ; None         ; 155.900 ns ; contador:inst2|inst4  ; B3 ; clock      ;
+; N/A   ; None         ; 155.900 ns ; contador:inst2|inst5  ; B3 ; clock      ;
+; N/A   ; None         ; 155.100 ns ; contador:inst2|inst6  ; B1 ; clock      ;
+; N/A   ; None         ; 155.100 ns ; contador:inst2|inst11 ; B1 ; clock      ;
+; N/A   ; None         ; 155.000 ns ; contador:inst2|inst   ; B1 ; clock      ;
+; N/A   ; None         ; 155.000 ns ; contador:inst2|inst3  ; B1 ; clock      ;
+; N/A   ; None         ; 155.000 ns ; contador:inst2|inst4  ; B1 ; clock      ;
+; N/A   ; None         ; 155.000 ns ; contador:inst2|inst5  ; B1 ; clock      ;
+; N/A   ; None         ; 154.300 ns ; contador:inst2|inst6  ; B2 ; clock      ;
+; N/A   ; None         ; 154.300 ns ; contador:inst2|inst11 ; B2 ; clock      ;
+; N/A   ; None         ; 154.200 ns ; contador:inst2|inst   ; B2 ; clock      ;
+; N/A   ; None         ; 154.200 ns ; contador:inst2|inst3  ; B2 ; clock      ;
+; N/A   ; None         ; 154.200 ns ; contador:inst2|inst4  ; B2 ; clock      ;
+; N/A   ; None         ; 154.200 ns ; contador:inst2|inst5  ; B2 ; clock      ;
+; N/A   ; None         ; 151.500 ns ; contador:inst2|inst6  ; B0 ; clock      ;
+; N/A   ; None         ; 151.500 ns ; contador:inst2|inst11 ; B0 ; clock      ;
+; N/A   ; None         ; 151.400 ns ; contador:inst2|inst   ; B0 ; clock      ;
+; N/A   ; None         ; 151.400 ns ; contador:inst2|inst3  ; B0 ; clock      ;
+; N/A   ; None         ; 151.400 ns ; contador:inst2|inst4  ; B0 ; clock      ;
+; N/A   ; None         ; 151.400 ns ; contador:inst2|inst5  ; B0 ; clock      ;
+; N/A   ; None         ; 150.500 ns ; contador:inst2|inst6  ; B5 ; clock      ;
+; N/A   ; None         ; 150.500 ns ; contador:inst2|inst11 ; B5 ; clock      ;
+; N/A   ; None         ; 150.400 ns ; contador:inst2|inst   ; B5 ; clock      ;
+; N/A   ; None         ; 150.400 ns ; contador:inst2|inst3  ; B5 ; clock      ;
+; N/A   ; None         ; 150.400 ns ; contador:inst2|inst4  ; B5 ; clock      ;
+; N/A   ; None         ; 150.400 ns ; contador:inst2|inst5  ; B5 ; clock      ;
+; N/A   ; None         ; 129.600 ns ; Somar:inst7|inst22    ; B4 ; clock      ;
+; N/A   ; None         ; 125.900 ns ; Somar:inst7|inst22    ; B3 ; clock      ;
+; N/A   ; None         ; 125.900 ns ; Somar:inst7|inst17    ; B4 ; clock      ;
+; N/A   ; None         ; 125.800 ns ; Somar:inst7|inst22    ; B1 ; clock      ;
+; N/A   ; None         ; 125.000 ns ; Somar:inst7|inst22    ; B2 ; clock      ;
+; N/A   ; None         ; 122.200 ns ; Somar:inst7|inst22    ; B0 ; clock      ;
+; N/A   ; None         ; 122.100 ns ; Somar:inst7|inst17    ; B3 ; clock      ;
+; N/A   ; None         ; 122.100 ns ; Somar:inst7|inst17    ; B1 ; clock      ;
+; N/A   ; None         ; 121.300 ns ; Somar:inst7|inst17    ; B2 ; clock      ;
+; N/A   ; None         ; 121.200 ns ; Somar:inst7|inst16    ; B4 ; clock      ;
+; N/A   ; None         ; 121.200 ns ; Somar:inst7|inst22    ; B5 ; clock      ;
+; N/A   ; None         ; 119.400 ns ; Somar:inst7|inst16    ; B3 ; clock      ;
+; N/A   ; None         ; 118.800 ns ; Somar:inst7|inst16    ; B1 ; clock      ;
+; N/A   ; None         ; 118.500 ns ; Somar:inst7|inst17    ; B0 ; clock      ;
+; N/A   ; None         ; 118.000 ns ; Somar:inst7|inst16    ; B2 ; clock      ;
+; N/A   ; None         ; 117.500 ns ; Somar:inst7|inst17    ; B5 ; clock      ;
+; N/A   ; None         ; 115.800 ns ; Somar:inst7|inst16    ; B0 ; clock      ;
+; N/A   ; None         ; 112.800 ns ; Somar:inst7|inst16    ; B5 ; clock      ;
++-------+--------------+------------+-----------------------+----+------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Mar 31 07:12:02 2016
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Memoria -c Memoria
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "inst1" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clock" is an undefined clock
+Warning: Found 77 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "inst1" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF1" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF2" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF1" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF3" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF2" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF4" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF3" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF5" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF4" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF6" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF5" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF7" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF6" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF8" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF7" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF9" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF8" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF10" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF9" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF11" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF10" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF12" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF11" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF13" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF12" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF14" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF13" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF15" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF14" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF16" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF15" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF17" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF16" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF18" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF17" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF19" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF18" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF20" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF19" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF21" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF20" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF22" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF21" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF23" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF22" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF24" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF23" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF25" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF24" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF26" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF25" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF27" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF26" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[0]~mem_cell_ra0" as buffer
+    Info: Detected gated clock "Somar:inst7|SomadorFA:inst10|inst" as buffer
+    Info: Detected gated clock "Somar:inst7|SomadorFA:inst11|inst" as buffer
+    Info: Detected gated clock "Somar:inst7|SomadorFA:inst8|inst4" as buffer
+    Info: Detected gated clock "Somar:inst7|SomadorFA:inst13|inst4" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[1]~mem_cell_ra0" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[2]~mem_cell_ra0" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[3]~mem_cell_ra0" as buffer
+    Info: Detected ripple clock "Somar:inst7|inst22" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[4]~mem_cell_ra0" as buffer
+    Info: Detected ripple clock "DivisorFrequencia:inst15|FF28" as buffer
+    Info: Detected ripple clock "DivisorFrequencia0:inst16|FF27" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[6]~mem_cell_ra0" as buffer
+    Info: Detected ripple clock "Somar:inst7|inst17" as buffer
+    Info: Detected ripple clock "contador:inst2|inst11" as buffer
+    Info: Detected ripple clock "contador:inst2|inst6" as buffer
+    Info: Detected ripple clock "contador:inst2|inst5" as buffer
+    Info: Detected ripple clock "contador:inst2|inst4" as buffer
+    Info: Detected ripple clock "contador:inst2|inst3" as buffer
+    Info: Detected ripple clock "contador:inst2|inst" as buffer
+    Info: Detected gated clock "lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[5]~mem_cell_ra0" as buffer
+    Info: Detected gated clock "inst8" as buffer
+    Info: Detected ripple clock "Somar:inst7|inst16" as buffer
+Info: Clock "clock" has Internal fmax of 11.49 MHz between source register "contador:inst2|inst6" and destination register "Somar:inst7|inst16" (period= 87.0 ns)
+    Info: + Longest register to register delay is 19.700 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC1_H25; Fanout = 9; REG Node = 'contador:inst2|inst6'
+        Info: 2: + IC(1.400 ns) + CELL(7.300 ns) = 8.700 ns; Loc. = EC9_H; Fanout = 1; MEM Node = 'lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[4]~mem_cell_ra0'
+        Info: 3: + IC(0.000 ns) + CELL(0.500 ns) = 9.200 ns; Loc. = EC9_H; Fanout = 9; MEM Node = 'lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[4]'
+        Info: 4: + IC(1.600 ns) + CELL(2.200 ns) = 13.000 ns; Loc. = LC7_H27; Fanout = 1; COMB Node = 'Somar:inst7|tipoMaiuscula:inst7|inst10~0'
+        Info: 5: + IC(0.200 ns) + CELL(2.200 ns) = 15.400 ns; Loc. = LC1_H27; Fanout = 2; COMB Node = 'Somar:inst7|tipoMaiuscula:inst7|inst10~1'
+        Info: 6: + IC(1.100 ns) + CELL(2.000 ns) = 18.500 ns; Loc. = LC8_H28; Fanout = 2; COMB Node = 'Somar:inst7|tipoMaiuscula:inst7|inst10~2'
+        Info: 7: + IC(0.200 ns) + CELL(1.000 ns) = 19.700 ns; Loc. = LC5_H28; Fanout = 5; REG Node = 'Somar:inst7|inst16'
+        Info: Total cell delay = 15.200 ns ( 77.16 % )
+        Info: Total interconnect delay = 4.500 ns ( 22.84 % )
+    Info: - Smallest clock skew is -22.000 ns
+        Info: + Shortest clock path from clock "clock" to destination register is 91.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 2; CLK Node = 'clock'
+            Info: 2: + IC(1.400 ns) + CELL(1.100 ns) = 3.000 ns; Loc. = LC2_J50; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF1'
+            Info: 3: + IC(0.200 ns) + CELL(1.100 ns) = 4.300 ns; Loc. = LC1_J50; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF2'
+            Info: 4: + IC(1.200 ns) + CELL(1.100 ns) = 6.600 ns; Loc. = LC1_J46; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF3'
+            Info: 5: + IC(1.800 ns) + CELL(1.100 ns) = 9.500 ns; Loc. = LC2_J52; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF4'
+            Info: 6: + IC(1.900 ns) + CELL(1.100 ns) = 12.500 ns; Loc. = LC1_J44; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF5'
+            Info: 7: + IC(1.100 ns) + CELL(1.100 ns) = 14.700 ns; Loc. = LC2_J47; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF6'
+            Info: 8: + IC(1.800 ns) + CELL(1.100 ns) = 17.600 ns; Loc. = LC2_J43; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF7'
+            Info: 9: + IC(4.100 ns) + CELL(1.100 ns) = 22.800 ns; Loc. = LC1_C41; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF8'
+            Info: 10: + IC(1.800 ns) + CELL(1.100 ns) = 25.700 ns; Loc. = LC2_C47; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF9'
+            Info: 11: + IC(3.400 ns) + CELL(1.100 ns) = 30.200 ns; Loc. = LC1_J47; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF10'
+            Info: 12: + IC(1.700 ns) + CELL(1.100 ns) = 33.000 ns; Loc. = LC1_J30; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF11'
+            Info: 13: + IC(2.100 ns) + CELL(1.100 ns) = 36.200 ns; Loc. = LC1_J49; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF12'
+            Info: 14: + IC(1.900 ns) + CELL(1.100 ns) = 39.200 ns; Loc. = LC1_J36; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF13'
+            Info: 15: + IC(1.900 ns) + CELL(1.100 ns) = 42.200 ns; Loc. = LC2_J49; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF14'
+            Info: 16: + IC(1.800 ns) + CELL(1.100 ns) = 45.100 ns; Loc. = LC1_J42; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF15'
+            Info: 17: + IC(4.100 ns) + CELL(1.100 ns) = 50.300 ns; Loc. = LC1_C48; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF16'
+            Info: 18: + IC(2.000 ns) + CELL(1.100 ns) = 53.400 ns; Loc. = LC1_C30; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF17'
+            Info: 19: + IC(1.900 ns) + CELL(1.100 ns) = 56.400 ns; Loc. = LC1_C38; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF18'
+            Info: 20: + IC(2.300 ns) + CELL(1.100 ns) = 59.800 ns; Loc. = LC2_C2; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF19'
+            Info: 21: + IC(0.200 ns) + CELL(1.100 ns) = 61.100 ns; Loc. = LC1_C2; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF20'
+            Info: 22: + IC(4.900 ns) + CELL(1.100 ns) = 67.100 ns; Loc. = LC2_J36; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF21'
+            Info: 23: + IC(1.700 ns) + CELL(1.100 ns) = 69.900 ns; Loc. = LC1_J33; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF22'
+            Info: 24: + IC(1.700 ns) + CELL(1.100 ns) = 72.700 ns; Loc. = LC1_J29; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF23'
+            Info: 25: + IC(1.300 ns) + CELL(1.100 ns) = 75.100 ns; Loc. = LC2_J45; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF24'
+            Info: 26: + IC(0.200 ns) + CELL(1.100 ns) = 76.400 ns; Loc. = LC1_J45; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF25'
+            Info: 27: + IC(1.800 ns) + CELL(1.100 ns) = 79.300 ns; Loc. = LC1_J39; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF26'
+            Info: 28: + IC(1.900 ns) + CELL(1.100 ns) = 82.300 ns; Loc. = LC1_J52; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF27'
+            Info: 29: + IC(2.000 ns) + CELL(1.100 ns) = 85.400 ns; Loc. = LC3_J38; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF28'
+            Info: 30: + IC(0.200 ns) + CELL(1.700 ns) = 87.300 ns; Loc. = LC1_J38; Fanout = 5; COMB Node = 'inst8'
+            Info: 31: + IC(3.700 ns) + CELL(0.000 ns) = 91.000 ns; Loc. = LC5_H28; Fanout = 5; REG Node = 'Somar:inst7|inst16'
+            Info: Total cell delay = 33.000 ns ( 36.26 % )
+            Info: Total interconnect delay = 58.000 ns ( 63.74 % )
+        Info: - Longest clock path from clock "clock" to source register is 113.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 2; CLK Node = 'clock'
+            Info: 2: + IC(1.400 ns) + CELL(1.100 ns) = 3.000 ns; Loc. = LC2_I10; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF1'
+            Info: 3: + IC(1.900 ns) + CELL(1.100 ns) = 6.000 ns; Loc. = LC1_I14; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF2'
+            Info: 4: + IC(1.800 ns) + CELL(1.100 ns) = 8.900 ns; Loc. = LC1_I10; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF3'
+            Info: 5: + IC(1.800 ns) + CELL(1.100 ns) = 11.800 ns; Loc. = LC1_I9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF4'
+            Info: 6: + IC(0.200 ns) + CELL(1.100 ns) = 13.100 ns; Loc. = LC2_I9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF5'
+            Info: 7: + IC(3.700 ns) + CELL(1.100 ns) = 17.900 ns; Loc. = LC1_G5; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF6'
+            Info: 8: + IC(1.800 ns) + CELL(1.100 ns) = 20.800 ns; Loc. = LC2_G4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF7'
+            Info: 9: + IC(2.400 ns) + CELL(1.100 ns) = 24.300 ns; Loc. = LC2_G25; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF8'
+            Info: 10: + IC(0.200 ns) + CELL(1.100 ns) = 25.600 ns; Loc. = LC1_G25; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF9'
+            Info: 11: + IC(2.000 ns) + CELL(1.100 ns) = 28.700 ns; Loc. = LC2_G11; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF10'
+            Info: 12: + IC(4.000 ns) + CELL(1.100 ns) = 33.800 ns; Loc. = LC1_L18; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF11'
+            Info: 13: + IC(1.200 ns) + CELL(1.100 ns) = 36.100 ns; Loc. = LC1_L9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF12'
+            Info: 14: + IC(2.100 ns) + CELL(1.100 ns) = 39.300 ns; Loc. = LC1_L17; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF13'
+            Info: 15: + IC(4.000 ns) + CELL(1.100 ns) = 44.400 ns; Loc. = LC1_G12; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF14'
+            Info: 16: + IC(1.800 ns) + CELL(1.100 ns) = 47.300 ns; Loc. = LC1_G4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF15'
+            Info: 17: + IC(2.000 ns) + CELL(1.100 ns) = 50.400 ns; Loc. = LC1_G9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF16'
+            Info: 18: + IC(3.700 ns) + CELL(1.100 ns) = 55.200 ns; Loc. = LC1_I3; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF17'
+            Info: 19: + IC(4.000 ns) + CELL(1.100 ns) = 60.300 ns; Loc. = LC1_L13; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF18'
+            Info: 20: + IC(2.100 ns) + CELL(1.100 ns) = 63.500 ns; Loc. = LC1_L32; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF19'
+            Info: 21: + IC(1.900 ns) + CELL(1.100 ns) = 66.500 ns; Loc. = LC2_L43; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF20'
+            Info: 22: + IC(1.800 ns) + CELL(1.100 ns) = 69.400 ns; Loc. = LC2_L35; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF21'
+            Info: 23: + IC(0.200 ns) + CELL(1.100 ns) = 70.700 ns; Loc. = LC1_L35; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF22'
+            Info: 24: + IC(2.200 ns) + CELL(1.100 ns) = 74.000 ns; Loc. = LC2_L4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF23'
+            Info: 25: + IC(0.200 ns) + CELL(1.100 ns) = 75.300 ns; Loc. = LC1_L4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF24'
+            Info: 26: + IC(2.100 ns) + CELL(1.100 ns) = 78.500 ns; Loc. = LC2_L13; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF25'
+            Info: 27: + IC(2.300 ns) + CELL(1.100 ns) = 81.900 ns; Loc. = LC1_L43; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF26'
+            Info: 28: + IC(3.700 ns) + CELL(1.100 ns) = 86.700 ns; Loc. = LC2_J38; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF27'
+            Info: 29: + IC(0.200 ns) + CELL(1.900 ns) = 88.800 ns; Loc. = LC1_J38; Fanout = 5; COMB Node = 'inst8'
+            Info: 30: + IC(3.700 ns) + CELL(1.100 ns) = 93.600 ns; Loc. = LC3_H28; Fanout = 15; REG Node = 'Somar:inst7|inst22'
+            Info: 31: + IC(1.800 ns) + CELL(2.200 ns) = 97.600 ns; Loc. = LC3_H27; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst13|inst4'
+            Info: 32: + IC(1.200 ns) + CELL(1.700 ns) = 100.500 ns; Loc. = LC1_H34; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst8|inst4'
+            Info: 33: + IC(1.100 ns) + CELL(1.700 ns) = 103.300 ns; Loc. = LC2_H39; Fanout = 15; COMB Node = 'Somar:inst7|SomadorFA:inst10|inst'
+            Info: 34: + IC(1.900 ns) + CELL(1.700 ns) = 106.900 ns; Loc. = LC7_H41; Fanout = 1; COMB Node = 'Somar:inst7|inst47~0'
+            Info: 35: + IC(0.200 ns) + CELL(1.700 ns) = 108.800 ns; Loc. = LC1_H41; Fanout = 7; REG Node = 'inst1'
+            Info: 36: + IC(4.200 ns) + CELL(0.000 ns) = 113.000 ns; Loc. = LC1_H25; Fanout = 9; REG Node = 'contador:inst2|inst6'
+            Info: Total cell delay = 42.200 ns ( 37.35 % )
+            Info: Total interconnect delay = 70.800 ns ( 62.65 % )
+    Info: + Micro clock to output delay of source is 1.100 ns
+    Info: + Micro setup delay of destination is 0.700 ns
+    Info: Delay path is controlled by inverted clocks -- if clock duty cycle is 50%, fmax is divided by two
+Warning: Circuit may not operate. Detected 23 non-operational path(s) clocked by clock "clock" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "DivisorFrequencia:inst15|FF28" and destination pin or register "inst1" for clock "clock" (Hold time is 15.8 ns)
+    Info: + Largest clock skew is 24.500 ns
+        Info: + Longest clock path from clock "clock" to destination register is 108.800 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 2; CLK Node = 'clock'
+            Info: 2: + IC(1.400 ns) + CELL(1.100 ns) = 3.000 ns; Loc. = LC2_I10; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF1'
+            Info: 3: + IC(1.900 ns) + CELL(1.100 ns) = 6.000 ns; Loc. = LC1_I14; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF2'
+            Info: 4: + IC(1.800 ns) + CELL(1.100 ns) = 8.900 ns; Loc. = LC1_I10; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF3'
+            Info: 5: + IC(1.800 ns) + CELL(1.100 ns) = 11.800 ns; Loc. = LC1_I9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF4'
+            Info: 6: + IC(0.200 ns) + CELL(1.100 ns) = 13.100 ns; Loc. = LC2_I9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF5'
+            Info: 7: + IC(3.700 ns) + CELL(1.100 ns) = 17.900 ns; Loc. = LC1_G5; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF6'
+            Info: 8: + IC(1.800 ns) + CELL(1.100 ns) = 20.800 ns; Loc. = LC2_G4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF7'
+            Info: 9: + IC(2.400 ns) + CELL(1.100 ns) = 24.300 ns; Loc. = LC2_G25; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF8'
+            Info: 10: + IC(0.200 ns) + CELL(1.100 ns) = 25.600 ns; Loc. = LC1_G25; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF9'
+            Info: 11: + IC(2.000 ns) + CELL(1.100 ns) = 28.700 ns; Loc. = LC2_G11; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF10'
+            Info: 12: + IC(4.000 ns) + CELL(1.100 ns) = 33.800 ns; Loc. = LC1_L18; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF11'
+            Info: 13: + IC(1.200 ns) + CELL(1.100 ns) = 36.100 ns; Loc. = LC1_L9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF12'
+            Info: 14: + IC(2.100 ns) + CELL(1.100 ns) = 39.300 ns; Loc. = LC1_L17; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF13'
+            Info: 15: + IC(4.000 ns) + CELL(1.100 ns) = 44.400 ns; Loc. = LC1_G12; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF14'
+            Info: 16: + IC(1.800 ns) + CELL(1.100 ns) = 47.300 ns; Loc. = LC1_G4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF15'
+            Info: 17: + IC(2.000 ns) + CELL(1.100 ns) = 50.400 ns; Loc. = LC1_G9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF16'
+            Info: 18: + IC(3.700 ns) + CELL(1.100 ns) = 55.200 ns; Loc. = LC1_I3; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF17'
+            Info: 19: + IC(4.000 ns) + CELL(1.100 ns) = 60.300 ns; Loc. = LC1_L13; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF18'
+            Info: 20: + IC(2.100 ns) + CELL(1.100 ns) = 63.500 ns; Loc. = LC1_L32; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF19'
+            Info: 21: + IC(1.900 ns) + CELL(1.100 ns) = 66.500 ns; Loc. = LC2_L43; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF20'
+            Info: 22: + IC(1.800 ns) + CELL(1.100 ns) = 69.400 ns; Loc. = LC2_L35; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF21'
+            Info: 23: + IC(0.200 ns) + CELL(1.100 ns) = 70.700 ns; Loc. = LC1_L35; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF22'
+            Info: 24: + IC(2.200 ns) + CELL(1.100 ns) = 74.000 ns; Loc. = LC2_L4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF23'
+            Info: 25: + IC(0.200 ns) + CELL(1.100 ns) = 75.300 ns; Loc. = LC1_L4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF24'
+            Info: 26: + IC(2.100 ns) + CELL(1.100 ns) = 78.500 ns; Loc. = LC2_L13; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF25'
+            Info: 27: + IC(2.300 ns) + CELL(1.100 ns) = 81.900 ns; Loc. = LC1_L43; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF26'
+            Info: 28: + IC(3.700 ns) + CELL(1.100 ns) = 86.700 ns; Loc. = LC2_J38; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF27'
+            Info: 29: + IC(0.200 ns) + CELL(1.900 ns) = 88.800 ns; Loc. = LC1_J38; Fanout = 5; COMB Node = 'inst8'
+            Info: 30: + IC(3.700 ns) + CELL(1.100 ns) = 93.600 ns; Loc. = LC3_H28; Fanout = 15; REG Node = 'Somar:inst7|inst22'
+            Info: 31: + IC(1.800 ns) + CELL(2.200 ns) = 97.600 ns; Loc. = LC3_H27; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst13|inst4'
+            Info: 32: + IC(1.200 ns) + CELL(1.700 ns) = 100.500 ns; Loc. = LC1_H34; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst8|inst4'
+            Info: 33: + IC(1.100 ns) + CELL(1.700 ns) = 103.300 ns; Loc. = LC2_H39; Fanout = 15; COMB Node = 'Somar:inst7|SomadorFA:inst10|inst'
+            Info: 34: + IC(1.900 ns) + CELL(1.700 ns) = 106.900 ns; Loc. = LC7_H41; Fanout = 1; COMB Node = 'Somar:inst7|inst47~0'
+            Info: 35: + IC(0.200 ns) + CELL(1.700 ns) = 108.800 ns; Loc. = LC1_H41; Fanout = 7; REG Node = 'inst1'
+            Info: Total cell delay = 42.200 ns ( 38.79 % )
+            Info: Total interconnect delay = 66.600 ns ( 61.21 % )
+        Info: - Shortest clock path from clock "clock" to source register is 84.300 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 2; CLK Node = 'clock'
+            Info: 2: + IC(1.400 ns) + CELL(1.100 ns) = 3.000 ns; Loc. = LC2_J50; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF1'
+            Info: 3: + IC(0.200 ns) + CELL(1.100 ns) = 4.300 ns; Loc. = LC1_J50; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF2'
+            Info: 4: + IC(1.200 ns) + CELL(1.100 ns) = 6.600 ns; Loc. = LC1_J46; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF3'
+            Info: 5: + IC(1.800 ns) + CELL(1.100 ns) = 9.500 ns; Loc. = LC2_J52; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF4'
+            Info: 6: + IC(1.900 ns) + CELL(1.100 ns) = 12.500 ns; Loc. = LC1_J44; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF5'
+            Info: 7: + IC(1.100 ns) + CELL(1.100 ns) = 14.700 ns; Loc. = LC2_J47; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF6'
+            Info: 8: + IC(1.800 ns) + CELL(1.100 ns) = 17.600 ns; Loc. = LC2_J43; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF7'
+            Info: 9: + IC(4.100 ns) + CELL(1.100 ns) = 22.800 ns; Loc. = LC1_C41; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF8'
+            Info: 10: + IC(1.800 ns) + CELL(1.100 ns) = 25.700 ns; Loc. = LC2_C47; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF9'
+            Info: 11: + IC(3.400 ns) + CELL(1.100 ns) = 30.200 ns; Loc. = LC1_J47; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF10'
+            Info: 12: + IC(1.700 ns) + CELL(1.100 ns) = 33.000 ns; Loc. = LC1_J30; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF11'
+            Info: 13: + IC(2.100 ns) + CELL(1.100 ns) = 36.200 ns; Loc. = LC1_J49; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF12'
+            Info: 14: + IC(1.900 ns) + CELL(1.100 ns) = 39.200 ns; Loc. = LC1_J36; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF13'
+            Info: 15: + IC(1.900 ns) + CELL(1.100 ns) = 42.200 ns; Loc. = LC2_J49; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF14'
+            Info: 16: + IC(1.800 ns) + CELL(1.100 ns) = 45.100 ns; Loc. = LC1_J42; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF15'
+            Info: 17: + IC(4.100 ns) + CELL(1.100 ns) = 50.300 ns; Loc. = LC1_C48; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF16'
+            Info: 18: + IC(2.000 ns) + CELL(1.100 ns) = 53.400 ns; Loc. = LC1_C30; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF17'
+            Info: 19: + IC(1.900 ns) + CELL(1.100 ns) = 56.400 ns; Loc. = LC1_C38; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF18'
+            Info: 20: + IC(2.300 ns) + CELL(1.100 ns) = 59.800 ns; Loc. = LC2_C2; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF19'
+            Info: 21: + IC(0.200 ns) + CELL(1.100 ns) = 61.100 ns; Loc. = LC1_C2; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF20'
+            Info: 22: + IC(4.900 ns) + CELL(1.100 ns) = 67.100 ns; Loc. = LC2_J36; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF21'
+            Info: 23: + IC(1.700 ns) + CELL(1.100 ns) = 69.900 ns; Loc. = LC1_J33; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF22'
+            Info: 24: + IC(1.700 ns) + CELL(1.100 ns) = 72.700 ns; Loc. = LC1_J29; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF23'
+            Info: 25: + IC(1.300 ns) + CELL(1.100 ns) = 75.100 ns; Loc. = LC2_J45; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF24'
+            Info: 26: + IC(0.200 ns) + CELL(1.100 ns) = 76.400 ns; Loc. = LC1_J45; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF25'
+            Info: 27: + IC(1.800 ns) + CELL(1.100 ns) = 79.300 ns; Loc. = LC1_J39; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF26'
+            Info: 28: + IC(1.900 ns) + CELL(1.100 ns) = 82.300 ns; Loc. = LC1_J52; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF27'
+            Info: 29: + IC(2.000 ns) + CELL(0.000 ns) = 84.300 ns; Loc. = LC3_J38; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF28'
+            Info: Total cell delay = 30.200 ns ( 35.82 % )
+            Info: Total interconnect delay = 54.100 ns ( 64.18 % )
+    Info: - Micro clock to output delay of source is 1.100 ns
+    Info: - Shortest register to register delay is 7.600 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC3_J38; Fanout = 2; REG Node = 'DivisorFrequencia:inst15|FF28'
+        Info: 2: + IC(0.200 ns) + CELL(1.700 ns) = 1.900 ns; Loc. = LC1_J38; Fanout = 5; COMB Node = 'inst8'
+        Info: 3: + IC(3.700 ns) + CELL(2.000 ns) = 7.600 ns; Loc. = LC1_H41; Fanout = 7; REG Node = 'inst1'
+        Info: Total cell delay = 3.700 ns ( 48.68 % )
+        Info: Total interconnect delay = 3.900 ns ( 51.32 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+Info: tco from clock "clock" to destination pin "B4" through register "contador:inst2|inst6" is 158.900 ns
+    Info: + Longest clock path from clock "clock" to source register is 113.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 2; CLK Node = 'clock'
+        Info: 2: + IC(1.400 ns) + CELL(1.100 ns) = 3.000 ns; Loc. = LC2_I10; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF1'
+        Info: 3: + IC(1.900 ns) + CELL(1.100 ns) = 6.000 ns; Loc. = LC1_I14; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF2'
+        Info: 4: + IC(1.800 ns) + CELL(1.100 ns) = 8.900 ns; Loc. = LC1_I10; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF3'
+        Info: 5: + IC(1.800 ns) + CELL(1.100 ns) = 11.800 ns; Loc. = LC1_I9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF4'
+        Info: 6: + IC(0.200 ns) + CELL(1.100 ns) = 13.100 ns; Loc. = LC2_I9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF5'
+        Info: 7: + IC(3.700 ns) + CELL(1.100 ns) = 17.900 ns; Loc. = LC1_G5; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF6'
+        Info: 8: + IC(1.800 ns) + CELL(1.100 ns) = 20.800 ns; Loc. = LC2_G4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF7'
+        Info: 9: + IC(2.400 ns) + CELL(1.100 ns) = 24.300 ns; Loc. = LC2_G25; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF8'
+        Info: 10: + IC(0.200 ns) + CELL(1.100 ns) = 25.600 ns; Loc. = LC1_G25; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF9'
+        Info: 11: + IC(2.000 ns) + CELL(1.100 ns) = 28.700 ns; Loc. = LC2_G11; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF10'
+        Info: 12: + IC(4.000 ns) + CELL(1.100 ns) = 33.800 ns; Loc. = LC1_L18; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF11'
+        Info: 13: + IC(1.200 ns) + CELL(1.100 ns) = 36.100 ns; Loc. = LC1_L9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF12'
+        Info: 14: + IC(2.100 ns) + CELL(1.100 ns) = 39.300 ns; Loc. = LC1_L17; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF13'
+        Info: 15: + IC(4.000 ns) + CELL(1.100 ns) = 44.400 ns; Loc. = LC1_G12; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF14'
+        Info: 16: + IC(1.800 ns) + CELL(1.100 ns) = 47.300 ns; Loc. = LC1_G4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF15'
+        Info: 17: + IC(2.000 ns) + CELL(1.100 ns) = 50.400 ns; Loc. = LC1_G9; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF16'
+        Info: 18: + IC(3.700 ns) + CELL(1.100 ns) = 55.200 ns; Loc. = LC1_I3; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF17'
+        Info: 19: + IC(4.000 ns) + CELL(1.100 ns) = 60.300 ns; Loc. = LC1_L13; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF18'
+        Info: 20: + IC(2.100 ns) + CELL(1.100 ns) = 63.500 ns; Loc. = LC1_L32; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF19'
+        Info: 21: + IC(1.900 ns) + CELL(1.100 ns) = 66.500 ns; Loc. = LC2_L43; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF20'
+        Info: 22: + IC(1.800 ns) + CELL(1.100 ns) = 69.400 ns; Loc. = LC2_L35; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF21'
+        Info: 23: + IC(0.200 ns) + CELL(1.100 ns) = 70.700 ns; Loc. = LC1_L35; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF22'
+        Info: 24: + IC(2.200 ns) + CELL(1.100 ns) = 74.000 ns; Loc. = LC2_L4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF23'
+        Info: 25: + IC(0.200 ns) + CELL(1.100 ns) = 75.300 ns; Loc. = LC1_L4; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF24'
+        Info: 26: + IC(2.100 ns) + CELL(1.100 ns) = 78.500 ns; Loc. = LC2_L13; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF25'
+        Info: 27: + IC(2.300 ns) + CELL(1.100 ns) = 81.900 ns; Loc. = LC1_L43; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF26'
+        Info: 28: + IC(3.700 ns) + CELL(1.100 ns) = 86.700 ns; Loc. = LC2_J38; Fanout = 2; REG Node = 'DivisorFrequencia0:inst16|FF27'
+        Info: 29: + IC(0.200 ns) + CELL(1.900 ns) = 88.800 ns; Loc. = LC1_J38; Fanout = 5; COMB Node = 'inst8'
+        Info: 30: + IC(3.700 ns) + CELL(1.100 ns) = 93.600 ns; Loc. = LC3_H28; Fanout = 15; REG Node = 'Somar:inst7|inst22'
+        Info: 31: + IC(1.800 ns) + CELL(2.200 ns) = 97.600 ns; Loc. = LC3_H27; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst13|inst4'
+        Info: 32: + IC(1.200 ns) + CELL(1.700 ns) = 100.500 ns; Loc. = LC1_H34; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst8|inst4'
+        Info: 33: + IC(1.100 ns) + CELL(1.700 ns) = 103.300 ns; Loc. = LC2_H39; Fanout = 15; COMB Node = 'Somar:inst7|SomadorFA:inst10|inst'
+        Info: 34: + IC(1.900 ns) + CELL(1.700 ns) = 106.900 ns; Loc. = LC7_H41; Fanout = 1; COMB Node = 'Somar:inst7|inst47~0'
+        Info: 35: + IC(0.200 ns) + CELL(1.700 ns) = 108.800 ns; Loc. = LC1_H41; Fanout = 7; REG Node = 'inst1'
+        Info: 36: + IC(4.200 ns) + CELL(0.000 ns) = 113.000 ns; Loc. = LC1_H25; Fanout = 9; REG Node = 'contador:inst2|inst6'
+        Info: Total cell delay = 42.200 ns ( 37.35 % )
+        Info: Total interconnect delay = 70.800 ns ( 62.65 % )
+    Info: + Micro clock to output delay of source is 1.100 ns
+    Info: + Longest register to pin delay is 44.800 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC1_H25; Fanout = 9; REG Node = 'contador:inst2|inst6'
+        Info: 2: + IC(1.400 ns) + CELL(7.300 ns) = 8.700 ns; Loc. = EC10_H; Fanout = 1; MEM Node = 'lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[2]~mem_cell_ra0'
+        Info: 3: + IC(0.000 ns) + CELL(0.500 ns) = 9.200 ns; Loc. = EC10_H; Fanout = 12; MEM Node = 'lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom|q[2]'
+        Info: 4: + IC(1.700 ns) + CELL(1.900 ns) = 12.800 ns; Loc. = LC3_H27; Fanout = 5; COMB Node = 'Somar:inst7|SomadorFA:inst13|inst4'
+        Info: 5: + IC(1.200 ns) + CELL(1.700 ns) = 15.700 ns; Loc. = LC3_H34; Fanout = 19; COMB Node = 'Somar:inst7|SomadorFA:inst8|inst'
+        Info: 6: + IC(2.200 ns) + CELL(2.000 ns) = 19.900 ns; Loc. = LC2_H6; Fanout = 1; COMB Node = 'Decodificador:inst4|posicao2:inst5|inst30~0'
+        Info: 7: + IC(2.600 ns) + CELL(1.900 ns) = 24.400 ns; Loc. = LC5_H45; Fanout = 1; COMB Node = 'Decodificador:inst4|posicao2:inst5|inst30~1'
+        Info: 8: + IC(0.200 ns) + CELL(2.000 ns) = 26.600 ns; Loc. = LC1_H45; Fanout = 1; COMB Node = 'Decodificador:inst4|posicao2:inst5|inst30~3'
+        Info: 9: + IC(1.900 ns) + CELL(2.200 ns) = 30.700 ns; Loc. = LC3_H29; Fanout = 1; COMB Node = 'Decodificador:inst4|posicao2:inst5|inst30~5'
+        Info: 10: + IC(2.000 ns) + CELL(2.200 ns) = 34.900 ns; Loc. = LC7_H45; Fanout = 1; COMB Node = 'Decodificador:inst4|posicao2:inst5|inst30~7'
+        Info: 11: + IC(1.400 ns) + CELL(8.500 ns) = 44.800 ns; Loc. = PIN_56; Fanout = 0; PIN Node = 'B4'
+        Info: Total cell delay = 30.200 ns ( 67.41 % )
+        Info: Total interconnect delay = 14.600 ns ( 32.59 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 220 megabytes
+    Info: Processing ended: Thu Mar 31 07:12:03 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

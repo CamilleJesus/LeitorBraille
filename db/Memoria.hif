@@ -1,0 +1,1242 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+2
+51
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Decodificador
+# storage
+db|Memoria.(2).cnf
+db|Memoria.(2).cnf
+# case_insensitive
+# source_file
+Decodificador.bdf
+6ff1b237ef97afa76ed56537f463c1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4
+}
+# macro_sequence
+
+# end
+# entity
+posicao4
+# storage
+db|Memoria.(3).cnf
+db|Memoria.(3).cnf
+# case_insensitive
+# source_file
+posicao4.bdf
+3c2aa541c9ec76af7b865caae3af27de
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao4:inst6
+}
+# macro_sequence
+
+# end
+# entity
+separador
+# storage
+db|Memoria.(4).cnf
+db|Memoria.(4).cnf
+# case_insensitive
+# source_file
+separador.bdf
+aaaba935fe2418944f31b9f14f0746d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|separador:inst8
+Somar:inst7|separador:inst6
+Somar:inst7|separador:inst14
+}
+# macro_sequence
+
+# end
+# entity
+posicao5
+# storage
+db|Memoria.(5).cnf
+db|Memoria.(5).cnf
+# case_insensitive
+# source_file
+posicao5.bdf
+27102351251fd1a3076cd7c15425a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao5:inst7
+}
+# macro_sequence
+
+# end
+# entity
+posicao6
+# storage
+db|Memoria.(6).cnf
+db|Memoria.(6).cnf
+# case_insensitive
+# source_file
+posicao6.bdf
+cdd987dd863c4c88efc9fb9bb3895
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao6:inst3
+}
+# macro_sequence
+
+# end
+# entity
+posicao3
+# storage
+db|Memoria.(7).cnf
+db|Memoria.(7).cnf
+# case_insensitive
+# source_file
+posicao3.bdf
+33a7413484449ee66c6051a010aca299
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao3:inst4
+}
+# macro_sequence
+
+# end
+# entity
+posicao2
+# storage
+db|Memoria.(8).cnf
+db|Memoria.(8).cnf
+# case_insensitive
+# source_file
+posicao2.bdf
+1af86539714f1f9ebdac603e253c1c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao2:inst5
+}
+# macro_sequence
+
+# end
+# entity
+posicao1
+# storage
+db|Memoria.(9).cnf
+db|Memoria.(9).cnf
+# case_insensitive
+# source_file
+posicao1.bdf
+4f39bb56472c555558b416e75532f929
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst
+}
+# macro_sequence
+
+# end
+# entity
+Block15
+# storage
+db|Memoria.(10).cnf
+db|Memoria.(10).cnf
+# case_insensitive
+# source_file
+Block15.bdf
+4780561ed2ee431e0455e37d1e6c46a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block15:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|Memoria.(11).cnf
+db|Memoria.(11).cnf
+# case_insensitive
+# source_file
+Block1.bdf
+b31016d64cdef73c8f1f4e4ff24f3cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block1:inst14
+}
+# macro_sequence
+
+# end
+# entity
+Block2
+# storage
+db|Memoria.(12).cnf
+db|Memoria.(12).cnf
+# case_insensitive
+# source_file
+Block2.bdf
+4a6aa9f56ac6d2ad4fec5fb341aebce
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block2:inst
+}
+# macro_sequence
+
+# end
+# entity
+Block3
+# storage
+db|Memoria.(13).cnf
+db|Memoria.(13).cnf
+# case_insensitive
+# source_file
+Block3.bdf
+1db3992076dc8495551b37a45540f2a1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block3:inst15
+}
+# macro_sequence
+
+# end
+# entity
+Block4
+# storage
+db|Memoria.(14).cnf
+db|Memoria.(14).cnf
+# case_insensitive
+# source_file
+Block4.bdf
+91747542bece214a3a21a1d6dc6ed3f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block4:inst16
+}
+# macro_sequence
+
+# end
+# entity
+Block5
+# storage
+db|Memoria.(15).cnf
+db|Memoria.(15).cnf
+# case_insensitive
+# source_file
+Block5.bdf
+28972e888427699710b04bd7c25acd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block5:inst17
+}
+# macro_sequence
+
+# end
+# entity
+Block6
+# storage
+db|Memoria.(16).cnf
+db|Memoria.(16).cnf
+# case_insensitive
+# source_file
+Block6.bdf
+169dd2eab8bc9eb92fd79ced897da52
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block6:inst18
+}
+# macro_sequence
+
+# end
+# entity
+Block7
+# storage
+db|Memoria.(17).cnf
+db|Memoria.(17).cnf
+# case_insensitive
+# source_file
+Block7.bdf
+c8178e4285fe71d64bcb04dffc2843c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block7:inst20
+}
+# macro_sequence
+
+# end
+# entity
+Block9
+# storage
+db|Memoria.(18).cnf
+db|Memoria.(18).cnf
+# case_insensitive
+# source_file
+Block9.bdf
+d5ac68dd6cf8a0f94e3d4d16be51dd2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block9:inst22
+}
+# macro_sequence
+
+# end
+# entity
+Block8
+# storage
+db|Memoria.(19).cnf
+db|Memoria.(19).cnf
+# case_insensitive
+# source_file
+Block8.bdf
+6b9971a9e7159fa5193f32764722e54
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block8:inst21
+}
+# macro_sequence
+
+# end
+# entity
+Block10
+# storage
+db|Memoria.(20).cnf
+db|Memoria.(20).cnf
+# case_insensitive
+# source_file
+Block10.bdf
+81ae5be9dc6a446b505971aab33f703b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block10:inst23
+}
+# macro_sequence
+
+# end
+# entity
+Block11
+# storage
+db|Memoria.(21).cnf
+db|Memoria.(21).cnf
+# case_insensitive
+# source_file
+Block11.bdf
+d48123be616a343028fdb4b7d216c1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block11:inst24
+}
+# macro_sequence
+
+# end
+# entity
+Block12
+# storage
+db|Memoria.(22).cnf
+db|Memoria.(22).cnf
+# case_insensitive
+# source_file
+Block12.bdf
+bc354f3715fbd25984eaf997a182286
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block12:inst25
+}
+# macro_sequence
+
+# end
+# entity
+Block13
+# storage
+db|Memoria.(23).cnf
+db|Memoria.(23).cnf
+# case_insensitive
+# source_file
+Block13.bdf
+9c32941279d4e53956e66ea319a5fca
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block13:inst26
+}
+# macro_sequence
+
+# end
+# entity
+Block14
+# storage
+db|Memoria.(24).cnf
+db|Memoria.(24).cnf
+# case_insensitive
+# source_file
+Block14.bdf
+f22e456f2a925e6f4e22a1d583fd4d24
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador:inst4|posicao1:inst|Block14:inst27
+}
+# macro_sequence
+
+# end
+# entity
+juntar
+# storage
+db|Memoria.(28).cnf
+db|Memoria.(28).cnf
+# case_insensitive
+# source_file
+juntar.bdf
+a2fd4ea0721c80aeeda9a97381c669
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|ValorSoma:inst1|juntar:inst
+Somar:inst7|juntar:inst
+}
+# macro_sequence
+
+# end
+# entity
+7485
+# storage
+db|Memoria.(31).cnf
+db|Memoria.(31).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|others|maxplus2|7485.tdf
+ac22cd3e0293aec9d3c702ceca7672d
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+B2
+-1
+3
+B1
+-1
+3
+B0
+-1
+3
+ALBO
+-1
+3
+ALBI
+-1
+3
+AGBO
+-1
+3
+AGBI
+-1
+3
+AEBO
+-1
+3
+AEBI
+-1
+3
+A2
+-1
+3
+A1
+-1
+3
+A0
+-1
+3
+}
+# include_file {
+c:|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+f7485
+# storage
+db|Memoria.(32).cnf
+db|Memoria.(32).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|others|maxplus2|f7485.bdf
+e882e59dc42a3662b35bb6ffb5ef73b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+7485
+# storage
+db|Memoria.(33).cnf
+db|Memoria.(33).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|others|maxplus2|7485.tdf
+ac22cd3e0293aec9d3c702ceca7672d
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+B3
+-1
+3
+B2
+-1
+3
+B1
+-1
+3
+B0
+-1
+3
+ALBO
+-1
+3
+AGBO
+-1
+3
+AEBO
+-1
+3
+A3
+-1
+3
+A2
+-1
+3
+A1
+-1
+3
+A0
+-1
+3
+}
+# include_file {
+c:|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+lpm_rom2
+# storage
+db|Memoria.(36).cnf
+db|Memoria.(36).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_rom2.vhd
+1ff695446bd32e53daef2e582e1ab
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+lpm_rom2:inst
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+lpm_rom
+# storage
+db|Memoria.(37).cnf
+db|Memoria.(37).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|megafunctions|lpm_rom.tdf
+2459289aa4a57fa4cbb7ab3b073a4
+7
+# user_parameter {
+LPM_WIDTH
+7
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHAD
+6
+PARAMETER_SIGNED_DEC
+USR
+LPM_NUMWORDS
+64
+PARAMETER_UNKNOWN
+DEF
+LPM_ADDRESS_CONTROL
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_OUTDATA
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_FILE
+MemoriaROM.mif
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+address5
+-1
+3
+address4
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
+# include_file {
+c:|altera|90sp2|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+c:|altera|90sp2|quartus|libraries|megafunctions|altrom.inc
+d4e3a69a331d3a99d3281790d99a1ebd
+}
+# hierarchies {
+lpm_rom2:inst|lpm_rom:lpm_rom_component
+}
+# macro_sequence
+
+# end
+# entity
+altrom
+# storage
+db|Memoria.(38).cnf
+db|Memoria.(38).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|megafunctions|altrom.tdf
+f7dde580e6ec9d891b19d8a8bd1575
+7
+# user_parameter {
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH
+7
+PARAMETER_UNKNOWN
+USR
+AD_WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+NUMWORDS
+64
+PARAMETER_UNKNOWN
+USR
+FILE
+MemoriaROM.mif
+PARAMETER_UNKNOWN
+USR
+REGISTERINPUTMODE
+DEFAULT
+PARAMETER_UNKNOWN
+USR
+MAXIMUM_DEPTH
+2048
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+SUPPRESS_MEMORY_CONVERSION_WARNINGS
+OFF
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+address5
+-1
+3
+address4
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
+# include_file {
+c:|altera|90sp2|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+c:|altera|90sp2|quartus|libraries|megafunctions|altsyncram.inc
+1b5760dd55919ddb45bfb2c0e896218b
+c:|altera|90sp2|quartus|libraries|megafunctions|altqpram.inc
+74e08939f96a7ea8e7a4d59a5b01fe7
+c:|altera|90sp2|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+c:|altera|90sp2|quartus|libraries|others|maxplus2|memmodes.inc
+44d4551a35f349f0dbacaf799d39950
+c:|altera|90sp2|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+}
+# memory_file {
+MemoriaROM.mif
+e2a603c978f8f94b68a519faa97585
+}
+# hierarchies {
+lpm_rom2:inst|lpm_rom:lpm_rom_component|altrom:srom
+}
+# macro_sequence
+
+# end
+# entity
+comparador1bit
+# storage
+db|Memoria.(0).cnf
+db|Memoria.(0).cnf
+# case_insensitive
+# source_file
+comparador1bit.bdf
+b133ba8544fd461673b56583c79ce
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst6
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst11
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst12
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst13
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst15
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2|comparador1bit:inst14
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst6
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst11
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst12
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst13
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst15
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3|comparador1bit:inst14
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst6
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst11
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst12
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst13
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst15
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst|comparador1bit:inst14
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst6
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst11
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst12
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst13
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst15
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1|comparador1bit:inst14
+}
+# macro_sequence
+
+# end
+# entity
+tipoNumero
+# storage
+db|Memoria.(30).cnf
+db|Memoria.(30).cnf
+# case_insensitive
+# source_file
+tipoNumero.bdf
+850bd8365d7b355238ada98ed46a35f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|tipoNumero:inst5
+}
+# macro_sequence
+
+# end
+# entity
+comparador7bits
+# storage
+db|Memoria.(34).cnf
+db|Memoria.(34).cnf
+# case_insensitive
+# source_file
+comparador7bits.bdf
+ba2619dd2b9815d59860a81d2128d0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst2
+Somar:inst7|tipoNumero:inst5|comparador7bits:inst3
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst
+Somar:inst7|tipoMaiuscula:inst7|comparador7bits:inst1
+}
+# macro_sequence
+
+# end
+# entity
+contador
+# storage
+db|Memoria.(25).cnf
+db|Memoria.(25).cnf
+# case_insensitive
+# source_file
+contador.bdf
+2261b569d62dc72cde5a285f393769
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+contador:inst2
+}
+# macro_sequence
+
+# end
+# entity
+divisor
+# storage
+db|Memoria.(39).cnf
+db|Memoria.(39).cnf
+# case_insensitive
+# source_file
+divisor.bdf
+695f3b55f03be082f11483c5e7d3290
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+divisor2
+# storage
+db|Memoria.(42).cnf
+db|Memoria.(42).cnf
+# case_insensitive
+# source_file
+divisor2.bdf
+62371d951d41d0e8a14e5651928cd23e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+SomadorFA
+# storage
+db|Memoria.(26).cnf
+db|Memoria.(26).cnf
+# case_insensitive
+# source_file
+SomadorFA.bdf
+252354561afd788d18a919d9395240
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|SomadorFA:inst11
+Somar:inst7|SomadorFA:inst10
+Somar:inst7|SomadorFA:inst8
+Somar:inst7|SomadorFA:inst13
+Somar:inst7|SomadorFA:inst9
+Somar:inst7|SomadorFA:inst12
+Somar:inst7|SomadorFA:inst23
+}
+# macro_sequence
+
+# end
+# entity
+DivisorFrequencia
+# storage
+db|Memoria.(1).cnf
+db|Memoria.(1).cnf
+# case_insensitive
+# source_file
+DivisorFrequencia.bdf
+a0f431d29bf5cef0d4b0b38372301fa6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DivisorFrequencia:inst15
+}
+# macro_sequence
+
+# end
+# entity
+DivisorFrequencia0
+# storage
+db|Memoria.(41).cnf
+db|Memoria.(41).cnf
+# case_insensitive
+# source_file
+DivisorFrequencia0.bdf
+c5bde63356e5a13349cabee1be5dd95d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DivisorFrequencia0:inst16
+}
+# macro_sequence
+
+# end
+# entity
+Somar
+# storage
+db|Memoria.(27).cnf
+db|Memoria.(27).cnf
+# case_insensitive
+# source_file
+Somar.bdf
+938e65d02c66b7a7af87f88dadac7bd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7
+}
+# macro_sequence
+
+# end
+# entity
+ValorSoma
+# storage
+db|Memoria.(29).cnf
+db|Memoria.(29).cnf
+# case_insensitive
+# source_file
+ValorSoma.bdf
+6a3e8a93ee0477db885639baea9faec
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|ValorSoma:inst1
+}
+# macro_sequence
+
+# end
+# entity
+tipoMaiuscula
+# storage
+db|Memoria.(35).cnf
+db|Memoria.(35).cnf
+# case_insensitive
+# source_file
+tipoMaiuscula.bdf
+36edef26a8a02a4c1750fb5fc9af8115
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somar:inst7|tipoMaiuscula:inst7
+}
+# macro_sequence
+
+# end
+# entity
+pbl2
+# storage
+db|Memoria.(40).cnf
+db|Memoria.(40).cnf
+# case_insensitive
+# source_file
+pbl2.bdf
+2c40c066872d3a2708fd161c9861eba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
